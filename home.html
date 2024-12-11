@@ -1,67 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #000000;
-      }
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
 
-      li {
-        float: left;
-        border-right: 1px solid #c5c5c5;
-      }
+.navbar {
+  width: 100%;
+  background-color: #444444;
+  overflow: auto;
+}
 
-      li:last-child {
-        border-right: none;
-      }
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 20px;
+}
 
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
+.navbar a:hover {
+  background-color: #ffffff;
+}
 
-      li a:hover:not(.active) {
-        background-color: #000000;
-      }
+.active {
+  background-color: #fe0000;
+}
 
-      .active {
-        background-color: #000000;
-      }
-    </style>
-  </head>
-  <h1 style="text-align: center ">Thai art and culture</h1>
-  <link rel="stylesheet" href="mystyle.css" />
-  <body>
-    <style>
-      body{
-        background-color: rgb(172, 172, 172);
-      }
-    </style>
-    <div>
-      <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="66162110550-6.html">Sing-up</a></li>
-        <li style="float: right"><a href="about us.html">About us</a></li>
-      </ul>
-      <p style="font-size: 3vw;">
-        Thai art has been passed down from the past, indicating a culture that
-        has developed on the basis of traditions, religion, and Thai society.
-        Thai society is an agricultural society, and therefore has a connection
-        to nature. It is what shapes beliefs, traditions, and culture that
-        affect the influence of Thai art
-      </p>
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
 
-    </div>
-  </body>
+body{
+    background-image: url(bgbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Centering the button at the bottom */
+.button-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #fc0202;
+}
+
+.button:active {
+    background-color: #01bc45;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+</style>
+<body>
+
+<div class="navbar">
+  <a class="active" href="home.html" translate="yes" target="_blank"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="login.html" target="_blank"><i class='bx bxs-lock-alt' ></i> Login</a>
+  <a href="signup.html" target="_blank"><i class='bx bx-user-pin'></i> Sign-up</a>
+  <a href="#"><i class='bx bxs-comment-error'></i> About us</a>
+</div>
+
+<!-- Centered Button Container -->
+<div class="button-container">
+  <a href="homepage/homepage.html">
+  <button class="button">Click Me</button>
+</a>
+</div>
+
+</body>
 </html>
